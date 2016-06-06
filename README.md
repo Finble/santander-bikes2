@@ -24,3 +24,7 @@ As a member of the public,
 So that I am not confused and charged unnecessarily,
 I'd like docking stations not to release bikes when there are none available.
 => RELEASE A BIKE METHOD UPDATED TO REFERENCE INSTANCE VARIABLE OF BIKES VS BIKES.NEW (AS THIS CREATES INFINITE SUPPLY) AND TO INCLUDE FAIL MESSAGE IF NO BIKES AVAILABLE
+
+As a maintainer of the system,
+So that I can control the distribution of bikes,
+I'd like docking stations not to accept more bikes than their capacity.
