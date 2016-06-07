@@ -26,13 +26,13 @@ describe DockingStation do
 		describe '#release_bike' do
 
 			it 'releases a bike' do
-			bike = Bike.new
-			subject.dock(bike)
-			expect(subject.release_bike).to eq bike
+			bike = Bike.new  #creates a new instance of bike
+			subject.dock(bike) #docks the new instance of bike into a new instance of DockingStation (subject)
+			expect(subject.release_bike).to eq bike  #expects release_bike to release a bike from array of bikes (that is added to when a new instance of bike is docked), so tests release_bike does not release a bike it does not have 
 			end
 
 			it 'raises an error where there are no bikes available' do
-			expect {subject.release_bike}.to raise_error 'No bikes available'
+			expect {subject.release_bike}.to raise_error 'No bikes available'  #as there is no code to create a bike, so DockingStation.new(subject).release_bikes starts with no bikes, test ensures error message arises when no bikes to release
 			end
 
 		end
